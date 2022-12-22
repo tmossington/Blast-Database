@@ -3,7 +3,7 @@
 import sys
 import sqlite3
 
-conn = sqlite3.connect('protein_align2.db3')
+conn = sqlite3.connect('protein_align.db3')
 
 q = {}
 
