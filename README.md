@@ -25,16 +25,25 @@ A. create a folder called "blastdb"
 B. download your 2 fasta files and place them inside the blastdb folder
 
 C. if compressed, extract each fasta file manually, or from the terminal:
+
     cd blastdb
+    
     gunzip *.gz
+    
     ls -l
 
 D. To format:
+
     cd blastdb
+    
     ls -l
+    
     makeblastdb -help
+    
     makeblastdb -in query.fasta -dbtype prot
+    
     makeblastdb -in reference.fasta -dbtype prot
+    
     ls -l
     
 NOTE: query and reference refers to the two species' fasta files, one of which will be used as a query against the other. It does not matter which species acts as the query or reference.
