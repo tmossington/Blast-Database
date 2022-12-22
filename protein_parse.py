@@ -48,7 +48,7 @@ for seq_record in Bio.SeqIO.parse(seqfile, "fasta"):
 seqfile.close()
 
 
-result_handle = open("alignment_yeast2.xml")
+result_handle = open("alignment_query.xml")
 for blast_result in NCBIXML.parse(result_handle):
 	for alignment in blast_result.alignments:
 		for hsp in alignment.hsps:
@@ -71,7 +71,7 @@ for blast_result in NCBIXML.parse(result_handle):
 					
 result_handle.close()
 
-result_handle = open("alignment_drosoph2.xml")
+result_handle = open("alignment_reference.xml")
 for blast_result in NCBIXML.parse(result_handle):
 	for alignment in blast_result.alignments:
 		for hsp in alignment.hsps:
