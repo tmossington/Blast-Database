@@ -9,7 +9,7 @@ init()
 
 
 # Blast 2
-blast_prog = '/Users/tmossington/ncbi-blast-2.13.0+/bin/blastp'
+blast_prog = '/Users/Name/ncbi-blast-2.13.0+/bin/blastp'
 blast_query = (sys.argv[2])
 blast_db = (sys.argv[1])
 
@@ -18,7 +18,7 @@ cmdline = NcbiblastpCommandline(cmd=blast_prog,
 								query=blast_query,
 								db=blast_db,
 								outfmt=5,
-								out="alignment_drosoph2.xml")
+								out="alignment_reference.xml")
 
 # execute
 stdout, stderr = cmdline()
