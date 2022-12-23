@@ -22,7 +22,7 @@ It is capable of retrieving the blast alignment for two proteins (specified by t
 finds pairs of orthologous proteins that are mutually best hits.
 The blast analysis will take several hours, which is why it is split into two separate files. 
 
-### 1. SET UP:
+### 1. Set up:
 
 Prior to running blast, each fasta file must be prepared in the steps below:
 
@@ -56,7 +56,7 @@ NOTE: query and reference refers to the two species' fasta files, one of which w
     
 These steps should create several new files needed for the blast analysis. No further alterations on these files is neccessary.
 
-### 2. RUNNING BLAST:
+### 2. Running Blast:
 
 
 ##### python3 blast.py query.fasta reference.fasta
